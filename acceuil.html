@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎧Musique site acceuil🎵🎶</title>
+    <link rel="stylesheet" href="CSS/acceuil.css">
+    <link rel="stylesheet" href="CSS/playlist.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="ArrierePlan py-0 my-0">
+    <header class="bg-dark fixed-top ">
+        <nav class="navbar px-5 navbar-expand-md d-flex align-items-center justify-content-around">
+            <img src="logo/musique__online2.png" alt="logo" class="logo navbar-brand py-0">
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse offset-lg-5 offset-md-3" id="navbarSupportedContent">
+                <div class="col">
+                    <ul class="navbar-nav d-flex flex-column flex-md-row gap-3 align-items-center">
+                        <li class="nav-item" id="acceuil"><a href="#" class="nav-link text-light active">Acceuil</a>
+                        </li>
+                        <li class="nav-item" id="playlistlink"><a href="#" class="nav-link text-light">Playlist</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light">Menu</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light">Profil</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light">A-propos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="d-flex align-items-center justify-content-center mt-5 pt-5 flex-column">
+        <section id="musicplay" class="active">
+            <div class="container">
+                <div class="row">
+                    <h1 class="text-light text-center playlist fw-bold pt-3 pb-5">Mes musiques</h1>
+                    <div id="musicAjout"></div>
+                </div>
+            </div>
+        </section>
+        <section id="playlist">
+            <div class="container">
+                <div class="row d-flex flex-column flex-lg-row align-items-center justify-content-center mt-5 pt-5">
+                    <h1 class="text-light text-center playlist fw-bold pt-5 pb-5">Playlist</h1>
+                    <div class="col-12 col-md-5 mb-5 mb-md-0">
+                        <a href="#" id="gims"
+                            class="btn pt-5 px-5 d-flex flex-column align-items-start text-warning gap-3 ">
+                            <i class="fa-solid fa-music fs-3"></i>
+                            <h1 class="pb-1">Maitre Gims</h1>
+                            <div class="text-light text-shadow fw-bold d-flex gap-5 text-justify fs-6 m">
+                                <div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quidem nesciunt
+                                        asperiores laborum aperiam cumque, architecto fuga quasi animi est officia
+                                        consequuntur, distinctio quo, ullam voluptatum modi?
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <a href="#" id="dadju"
+                            class="btn pt-5 px-5 d-flex flex-column align-items-start text-warning gap-3">
+                            <i class="fa-solid fa-music fs-3"></i>
+                            <h1 class="pb-1">Dadju</h1>
+                            <div class="text-light text-shadow fw-bold d-flex gap-5 text-justify fs-6 m">
+                                <div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quidem nesciunt
+                                        asperiores laborum aperiam cumque, architecto fuga quasi animi est officia
+                                        consequuntur, distinctio quo, ullam voluptatum modi?
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="mt-5 pt-4">
+        <div class="text-center">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between px-5 bg-dark py-2" id="commence2">
+                <p id="nom">Alan_Walker_&_Ava_Max_-_Alone,_Pt._II</p>
+
+                <!-- <input type="range" id="progressBar2" value="0" max="100" value="0" class="w-50 d-none d-md-block" step="0"> -->
+
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <i class="fa-solid fa-backward-step p-3" id="precedent"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="play-button" width="45" height="45" fill="currentColor"
+                        class="bi bi-play-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <path
+                            d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="pause-button" width="45" height="45" fill="currentColor"
+                        class="bi bi-pause-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <path
+                            d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" id="stop-button" width="45" height="45" fill="currentColor"
+                        class="bi bi-stop-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <path
+                            d="M5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5z" />
+                    </svg>
+                    <i class="fa-solid fa-backward-step p-3" id="suivant"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center " id="free">
+            <audio src="Musiques/Alan_Walker_&_Ava_Max_-_Alone,_Pt._II(360p)_20220911_133217.mp3" id="music"></audio>
+            <div class="d-flex align-items-center flex-column flex-column justify-content-center gap-1 bg-danger py-5 w-100"
+                id="commence">
+                <img src="./image/image2.png" alt="musique" class="px-3 py-3" id="imgText">
+                <div class="d-flex align-items-center flex-column flex-md-row justify-content-center gap-3 w-100">
+                    <div class="d-flex flex-column flex-md-row gap-1 align-items-center justify-content-center">
+                        <i class="fa-solid fa-volume-high" id="h"></i>
+                        <input type="range" id="volume" min="0" max="1" value="100" step="0.1">
+
+                        <span id="volume-value">100%</span>
+                    </div>
+                    <input type="range" id="progressBar" value="0" max="100" value="0" class="w-50" step="0">
+
+                    <div class="">
+                        <span id="sec">0:00</span> / <span id="track__time">1:00</span>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column gap-3 align-items-center">
+                    <div class="d-flex flex-row-reverse gap-3">
+                        <i class="fa-solid fa-forward" id="right"></i>
+                        <div class="d-flex align-items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="pause-button2" width="45" height="45"
+                                fill="currentColor" class="bi bi-pause-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path
+                                    d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0z" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" id="stop-button2" width="45" height="45"
+                                fill="currentColor" class="bi bi-stop-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path
+                                    d="M5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5z" />
+                            </svg>
+                        </div>
+                        <i class="fa-solid fa-forward" id="left"></i>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center gap-3">
+                        <i class="fa-solid fa-backward-step p-3" id="precedent2"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="play-button2" width="45" height="45"
+                            fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                        </svg>
+                        <i class="fa-solid fa-backward-step p-3" id="suivant2"></i>
+                    </div>
+                    <p id="nom2">Alan_Walker_&_Ava_Max_-_Alone,_Pt._II</p>
+                <a class="fa-solid fa-arrow-left fs-1 text-center w-100 p-3 mb-5 pt-lg-3 btn btn-light" id="retour"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark py-5 text-light text-center">
+        <p class="mt-5">&copy; 2024. Tout droits reservees</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        ty="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
+    <script src="js/controleaudio.js" defer></script>
+    <script src="js/partie.js" defer></script>
+</body>
+
+</html>

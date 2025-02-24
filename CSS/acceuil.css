@@ -1,0 +1,130 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* width: 100%; */
+    background-image: url("../image/image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.playlist {
+    font-size: 3em;
+}
+
+#play-button,
+#play-button2 {
+    cursor: pointer;
+}
+
+#play-button.play,
+#pause-button.play,
+#play-button2.play,
+#pause-button2.play {
+    display: none;
+}
+
+#pause-button,
+#stop-button,
+#pause-button2,
+#stop-button2 {
+    display: none;
+    cursor: pointer;
+}
+
+#pause-button.active,
+#stop-button.active,
+#play-button.active,
+#pause-button2.active,
+#stop-button2.active,
+#play-button2.active {
+    display: block;
+}
+
+#commence {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    left: 0;
+    color: white;
+    /* position: fixed; */
+    width: 100%;
+    /* border-top-left-radius: 25px;
+    border-top-right-radius: 25px; */
+}
+#commence2 {
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.list__music {
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+#left,
+#suivant,
+#suivant2 {
+    transform: rotate(-180deg);
+        border: 3px solid white;
+    padding: 11px;
+    cursor: pointer;
+    border-radius: 55px;
+}
+
+#left,
+#right,
+#precedent,
+#suivant,
+#precedent2,
+#suivant2  {
+    border: 3px solid white;
+    padding: 11px;
+    cursor: pointer;
+    border-radius: 55px;
+}
+
+#musicAjout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+}
+
+#imgText {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 568px) {
+    #musicAjout {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #imgText {
+        width: 100%;
+    }
+}
+
+#nom,
+#nom2 {
+    font-weight: bold;
+    font-size: 1.3em;
+}

@@ -1,0 +1,64 @@
+#gims {
+    background-image: url('../Musiques/maître\ Gims/ceinture\ noire/folder.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+#dadju {
+    background-image: url('../image/image\ copy 2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+main {
+    overflow: hidden;
+
+}
+
+header {
+    position: relative;
+}
+
+#musicplay {
+    transform: translate(10000px);
+    transition: all 200ms ease-in-out;
+    height: 0;
+    /* display: none; */
+}
+
+#musicplay.active {
+    /* display: block; */
+    height: 100%;
+    transform: translate(0);
+}
+
+#playlist {
+    transform: translate(10000px);
+    transition: all 200ms ease-in-out;
+    height: 0;
+    /* display: none; */
+}
+
+.m {
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+#playlist.active {
+    /* display: block; */
+    height: 100%;
+    transform: translate(0);
+}
+
+/* cacher la partie music complet */
+
+#free {
+    display: none;
+}
+
+/* montrer la partie music complet */
+#free.active {
+    display: block;
+}
