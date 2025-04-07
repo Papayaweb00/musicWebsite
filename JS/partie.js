@@ -1,5 +1,5 @@
 (async function gamemusique() {
-    const musicjson = await fetch("../json/tout.json");
+    const musicjson = await fetch("../json/playlist.json");
     const musictout = await musicjson.json();
 
     const musicAjout = document.querySelector("#musicAjout");
@@ -12,13 +12,15 @@
         const span = document.createElement('span');
         link.classList = 'btn btn-light d-flex align-items-center gap-3 py-0 ps-0 rounded-3';
 
-        let j = Math.floor(Math.random() * (i + 1));
+        // let j = Math.floor(Math.random() * (i + 1));
 
 
         link.href = music.src;
-        link.innerHTML = '<img src="../image/image2.png" class="w-25" alt="ecouter"> ';
+        // link.classList = "w-100"
+        // link.innerHTML = '<img src="../image/image2.png" class="w-25" alt="ecouter"> ';
+        link.classList.add('colorImage')
         span.innerHTML = music.nom;
-        span.classList = "text-dark"
+        span.classList = "text-light p-3"
         musicAjout.appendChild(link);
         link.appendChild(span);
 

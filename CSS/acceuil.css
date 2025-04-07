@@ -66,14 +66,24 @@ body {
     /* border-top-left-radius: 25px;
     border-top-right-radius: 25px; */
 }
-#commence2 {
+#commence2,
+#ouvre {
     cursor: pointer;
     color: white;
     width: 100%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    /* border-top-left-radius: 25px;
+    border-top-right-radius: 25px; */
 }
 
+.colorImage {
+    background-image: url('../image/image2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .list__music {
     cursor: pointer;
     margin-bottom: 100px;
@@ -121,6 +131,10 @@ body {
     #imgText {
         width: 100%;
     }
+
+    /* .colorImage {
+        width: 50%;
+    } */
 }
 
 #nom,

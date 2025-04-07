@@ -6,6 +6,7 @@ const progressBar = document.querySelector("#progressBar");
 
 const retour = document.querySelector("#retour");
 const commence2 = document.querySelector("#commence2");
+const ouvre = document.querySelector("#ouvre");
 const controlComplet = document.querySelector("#free");
 
 
@@ -128,12 +129,12 @@ $(document).ready(function () {
 
         $("#left").on({
             click: function () {
-                audio.currentTime -= 5;
+                audio.currentTime -= 10;
             }
         })
         $("#right").on({
             click: function () {
-                audio.currentTime += 50;
+                audio.currentTime += 10;
             }
         })
     }
@@ -192,7 +193,7 @@ $(document).ready(function () {
         });
     });
 
-    commence2.addEventListener('click', () => {
+    ouvre.addEventListener('click', () => {
         controlComplet.classList.add("active");
     })
     retour.addEventListener('click', ()=>{
