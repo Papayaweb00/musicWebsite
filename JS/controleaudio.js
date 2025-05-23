@@ -14,7 +14,7 @@ const progressBar2 = document.querySelector("#progressBar2");
 const elapsed = document.querySelector("#sec");
 const elapsed2 = document.querySelector("#elapsed");
 const track__time = document.querySelector("#track__time");
-let changeMusic = 0;
+// let changeMusic = 0;
 
 // Dubut du script en jquery
 $(document).ready(function () {

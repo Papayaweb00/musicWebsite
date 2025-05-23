@@ -1,15 +1,16 @@
 #gims {
-    background-image: url('../Musiques/maître\ Gims/ceinture\ noire/folder.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 70vh;
+    /* background-image: url('../Musiques/maître\ Gims/ceinture\ noire/folder.jpg'); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    height: 100%;
 }
 
-#dadju {
-    background-image: url('../image/image\ copy 2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 70vh;
+.image_change{
+    object-fit: cover;
+}
+
+.playPlaylist {
+    cursor: pointer;
 }
 
 main {

@@ -1,0 +1,1 @@
+gamemusique("../json/playlist.json")

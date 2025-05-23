@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 // Configuration
-const MUSIC_ROOT = './Musiques'; // Chemin relatif vers vos musiques
-const OUTPUT_FILE = 'playlist.json';
+const MUSIC_ROOT = './Musiques/maître Gims/subliminal'; // Chemin relatif vers vos musiques
+const OUTPUT_FILE = 'subliminal.json';
 
 // Fonction principale
 async function generateJSON() {
